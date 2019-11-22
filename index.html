@@ -2,14 +2,63 @@
 <html>
 
 <head>
-  <link rel="stylesheet" href="./styles.css" />
+  <link rel="stylesheet" href="styles.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body>
   <div class="form-wrapper">
-    <div class=container>
+    <div class="container clearfix">
       <form>
+        <div class="row">
+            <label for="name" class="col-6 col-lg-2">名前：</label>
+            <input type="text" name="name" class="col-6 col-lg-4">
+        </div>
+
+        <div class="row">
+            <label for="email" class="col-6 col-lg-2">メールアドレス：</label>
+            <input type="text" name="email" class="col-6 col-lg-4">
+        </div>
+
+        <div class="row">
+            <label for="password" class="col-6 col-lg-2">パスワード：</label>
+            <input type="text" name="password" class="col-6 col-lg-4">
+        </div>
+
+        <div class="row">
+            <label for="gender" class="col-6.col-lg-2">性別：</label>
+          <div class="radio-btn col-6 col-lg-4">
+            <div class="col-6 col-lg-6">
+            <input type="radio" name="man" id="gender"><label for="man">男性</label>
+          </div>
+            <div class="col-6 col-lg-6">
+                <input type="radio" name="woman" id="gender"><label for="woman">女性</label>
+              </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <label for="country" class="col-6 col-lg-2">出身地：</label>
+          <div class="select">
+            <select name="country" id="country">
+              <option value="tokyo" name="country">東京都</option>
+              <option value="osaka"" name="country">大阪府</option>
+            </select>
+        </div>
+        </div>
+
+        <div class="row">
+            <label for="phone" class="col-6 col-lg-2">電話番号：</label>
+            <input type="text" name="phone" class="col-6 col-lg-4">
+        </div>
+
+        <div class="row">
+            <label for="bio" class="col-6 col-lg-2">自己紹介：</label>
+            <textarea  name="bio" class="col-6 col-lg-4"></textarea></div>        
+        <button name="submit">登録する</button>
+
       </form>
     </div>
   </div>
 </body>
+
