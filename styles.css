@@ -11,6 +11,44 @@ body {
   font-family: "遊ゴシック", "YuGothic", "Hiragino Kaku Gothic Pro","ヒラギノ角ゴ Pro W3","メイリオ",Meiryo,"ＭＳ Ｐゴシック";
 }
 
+select {
+  margin-left: 15px;
+  border: 1px solid rgb(165, 161, 161);
+  height: 2rem;
+}
+
+label,input {
+  margin-bottom: .3rem;
+  margin-top: .3rem;
+}
+
+input[type=text]{
+  border: 1px solid rgb(165, 161, 161);
+  height: 2rem;
+  border-radius: 4px;
+}
+
+textarea {
+  border: 1px solid rgb(165, 161, 161);
+  height: 2rem;
+  border-radius: 4px;
+  height: 5em;
+}
+
+button {
+  margin-top: 1rem;
+  padding: .5rem;
+  background: rgb(199, 110, 110);
+  color: white;
+  border-radius: 4px;
+  border-bottom: 2px solid rgb(77, 47, 47);
+}
+
+button:hover {
+  background: rgb(236, 143, 143);
+  border-bottom: none;
+  transform: translateY(2px);
+}
 /* Grid */
 
 .container {
@@ -24,6 +62,7 @@ body {
   margin: 0 -15px; 
   /* グリッドを使わないコンテンツとグリッドを使うコンテンツとの位置を調整 */
   flex-wrap: wrap;
+  align-items: center;
 }
 
 .col-1 {
@@ -74,6 +113,24 @@ body {
 
   .col-lg-6 {
     flex-basis: 100%;
+  }
+  
+  button {
+    float: right;
+  }
+
+  label {
+    text-align: right;
+  }
+  
+  .row {
+    align-items: center;
+  }
+
+  .clearfix::after {
+    content: '';
+    display: block;
+    clear: both;
   }
 }
 
